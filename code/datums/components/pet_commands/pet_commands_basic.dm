@@ -324,3 +324,27 @@
 
 /datum/pet_command/move/retrieve_command_text(atom/living_pet, atom/target)
 	return "signals [living_pet] to move!"
+
+/**
+ * # Sniff command: command the mob to smell the reagents of the next thing you point at.
+ */
+/datum/pet_command/sniff
+	command_name = "Sniff"
+	command_desc = "Command your pet to smell an object!"
+	requires_pointing = TRUE
+	radial_icon_state = "sniff"
+	speech_commands = list("smell", "sniff", "sneef")
+
+/datum/pet_command/sniff/set_command_target(mob/living/parent, atom/target)
+	if(isnull(target) || !can_see(parent, target, 9))
+		return FALSE
+	return ..()
+
+/datum/pet_command/sniff/execute_action(datum/ai_controller/controller)
+	if(!controller.blackboard_key_exists(BB_CURRENT_PET_TARGET))
+		controller.set_behavior_tree_override(SUBPLAN_ID_PET_COMMAND, /datum/bt_node/subtree/pet_command/stay)
+		return
+//	controller.set_behavior_tree_override(SUBPLAN_ID_PET_COMMAND, /datum/bt_node/subtree/pet_command/sniff)
+
+/datum/pet_command/sniff/retrieve_command_text(atom/living_pet, atom/target)
+	return "signals [living_pet] to sniff [target]!"
