@@ -258,6 +258,29 @@
 	virus_suspectibility = 2
 	resulting_atom = /mob/living/basic/stoat
 
+/datum/micro_organism/cell_line/aardvark
+	desc = "Orycteropodidae cells"
+	required_reagents = list(
+		/datum/reagent/consumable/nutriment/protein,
+		/datum/reagent/consumable/liquidgibs,
+	)
+
+	supplementary_reagents = list(
+		/datum/reagent/ants = 3,
+		/datum/reagent/growthserum = 2,
+		/datum/reagent/consumable/nutriment/vitamin = 1,
+	)
+
+	suppressive_reagents = list(
+		/datum/reagent/toxin/pestkiller = -5,
+		/datum/reagent/consumable/ethanol/bug_spray = -4,
+		/datum/reagent/consumable/tomatojuice = -1,
+		/datum/reagent/consumable/potato_juice = -1,
+	)
+
+	virus_suspectibility = 1
+	resulting_atom = /mob/living/basic/aardvark
+
 /datum/micro_organism/cell_line/rabbit
 	desc = "Lepus cells"
 	required_reagents = list(/datum/reagent/consumable/nutriment/protein)

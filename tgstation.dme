@@ -5385,6 +5385,8 @@
 #include "code\modules\mob\living\basic\festivus_pole.dm"
 #include "code\modules\mob\living\basic\revolutionary.dm"
 #include "code\modules\mob\living\basic\tree.dm"
+#include "code\modules\mob\living\basic\aardvarks\aardvark.dm"
+#include "code\modules\mob\living\basic\aardvarks\aardvark_ai.dm"
 #include "code\modules\mob\living\basic\alien\_alien.dm"
 #include "code\modules\mob\living\basic\alien\alien_ai.dm"
 #include "code\modules\mob\living\basic\alien\drone.dm"

@@ -13,6 +13,7 @@ GLOBAL_LIST_INIT_TYPED(cell_line_tables, /list, list(
 		/datum/micro_organism/cell_line/goat = 1,
 		/datum/micro_organism/cell_line/sheep = 1,
 		/datum/micro_organism/cell_line/lizard = 1,
+		/datum/micro_organism/cell_line/aardvark = 1,
 	),
 
 	CELL_LINE_TABLE_MOIST = list(
@@ -46,6 +47,7 @@ GLOBAL_LIST_INIT_TYPED(cell_line_tables, /list, list(
 		/datum/micro_organism/cell_line/pig = 1,
 		/datum/micro_organism/cell_line/fox = 1,
 		/datum/micro_organism/cell_line/rabbit = 1,
+		/datum/micro_organism/cell_line/aardvark = 1,
 	),
 
 	CELL_LINE_TABLE_BEAR = list(/datum/micro_organism/cell_line/bear = 1),
@@ -69,6 +71,7 @@ GLOBAL_LIST_INIT_TYPED(cell_line_tables, /list, list(
 	CELL_LINE_TABLE_PUG = list(/datum/micro_organism/cell_line/pug = 1),
 	CELL_LINE_TABLE_FOX = list(/datum/micro_organism/cell_line/fox = 1),
 	CELL_LINE_TABLE_STOAT = list(/datum/micro_organism/cell_line/stoat = 1),
+	CELL_LINE_TABLE_AARDVARK = list(/datum/micro_organism/cell_line/aardvark = 1),
 	CELL_LINE_TABLE_RABBIT = list(/datum/micro_organism/cell_line/rabbit = 1),
 	CELL_LINE_TABLE_MOTHROACH = list(/datum/micro_organism/cell_line/mothroach = 1),
 	CELL_LINE_TABLE_SLIME = list(/datum/micro_organism/cell_line/slime = 1),

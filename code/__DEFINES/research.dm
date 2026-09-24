@@ -61,6 +61,7 @@
 #define CELL_LINE_TABLE_PUG "cell_line_pug_table"
 #define CELL_LINE_TABLE_FOX "cell_line_fox_table"
 #define CELL_LINE_TABLE_STOAT "cell_line_stoat_table"
+#define CELL_LINE_TABLE_AARDVARK "cell_line_table_aardvark"
 #define CELL_LINE_TABLE_RABBIT "cell_line_rabbit_table"
 #define CELL_LINE_TABLE_MOTHROACH "cell_line_mothroach_table"
 #define CELL_LINE_TABLE_SLIME "cell_line_slime_table"
